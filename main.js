@@ -219,8 +219,17 @@ function show_switch() {
 	document.getElementById("all_buttons").style.display="block";
         document.getElementById("hide_switch").style.display="block";
         document.getElementById("show_switch").style.display="none";
-	
 	}
+k=0
+function add(){
+    for(k=x_pos.length-1;k>i;){
+    console.log(k)
+    document.getElementById(x_pos[k]).innerHTML=document.getElementById(x_pos[k-1]).innerHTML
+    document.getElementById(x_pos[k]).style.left=document.getElementById(x_pos[k-1]).style.left
+    k=k-1
+    }
+    }
+
 
 function reset_style(elem){
 	document.getElementById(elem).style.left="0px"
@@ -1559,41 +1568,45 @@ document.getElementById("strum_down_6").addEventListener("mouseover", function()
 function strum_down_1(){
     reset_style(x_pos[i])
     document.getElementById(x_pos[i]).innerHTML="^"
-    document.getElementById(x_pos[i]).style.left="20px"
+    document.getElementById(x_pos[i]).style.left="20px"        
 }
 function strum_down_2(){
-    reset_style(x_pos2[i])
+    reset_style(x_pos2[i])	 
     document.getElementById(x_pos2[i]).innerHTML="^"
     document.getElementById(x_pos2[i]).style.left="20px"
 }
 function strum_down_3(){
     reset_style(x_pos3[i])
     document.getElementById(x_pos3[i]).innerHTML="^"
-    document.getElementById(x_pos3[i]).style.left="20px"
+    document.getElementById(x_pos3[i]).style.left="20px"        
 }
 function strum_down_4(){
-    reset_style(x_pos4[i])
+    reset_style(x_pos4[i])	 
     document.getElementById(x_pos4[i]).innerHTML="^"
     document.getElementById(x_pos4[i]).style.left="20px"
 }
 function strum_down_5(){
     reset_style(x_pos5[i])
     document.getElementById(x_pos5[i]).innerHTML="^"
-    document.getElementById(x_pos5[i]).style.left="20px"
+    document.getElementById(x_pos5[i]).style.left="20px"        
 }
 function strum_down_6(){
-    reset_style(x_pos6[i])
+    reset_style(x_pos6[i])	 
     document.getElementById(x_pos6[i]).innerHTML="^"
     document.getElementById(x_pos6[i]).style.left="20px"
 }
 
 
-
+l=0
 
 function the_next(){
+    storeStyle=[]
     i=i+1
     var marker=document.getElementById("marker")
     marker.style.marginLeft=i*44+".px";
+    for(l=0;l<=x_pos.length+1;l++){
+     storeStyle.push(document.getElementById(x_pos[l]).style.left);
+    }
 }
 function the_prev(){
     i=i-1
