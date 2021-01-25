@@ -1559,30 +1559,30 @@ document.getElementById("strum_down_6").addEventListener("mouseover", function()
 function strum_down_1(){
     reset_style(x_pos[i])
     document.getElementById(x_pos[i]).innerHTML="^"
-    document.getElementById(x_pos[i]).style.left="20px"        
+    document.getElementById(x_pos[i]).style.left="20px"
 }
 function strum_down_2(){
-    reset_style(x_pos2[i])	 
+    reset_style(x_pos2[i])
     document.getElementById(x_pos2[i]).innerHTML="^"
     document.getElementById(x_pos2[i]).style.left="20px"
 }
 function strum_down_3(){
     reset_style(x_pos3[i])
     document.getElementById(x_pos3[i]).innerHTML="^"
-    document.getElementById(x_pos3[i]).style.left="20px"        
+    document.getElementById(x_pos3[i]).style.left="20px"
 }
 function strum_down_4(){
-    reset_style(x_pos4[i])	 
+    reset_style(x_pos4[i])
     document.getElementById(x_pos4[i]).innerHTML="^"
     document.getElementById(x_pos4[i]).style.left="20px"
 }
 function strum_down_5(){
     reset_style(x_pos5[i])
     document.getElementById(x_pos5[i]).innerHTML="^"
-    document.getElementById(x_pos5[i]).style.left="20px"        
+    document.getElementById(x_pos5[i]).style.left="20px"
 }
 function strum_down_6(){
-    reset_style(x_pos6[i])	 
+    reset_style(x_pos6[i])
     document.getElementById(x_pos6[i]).innerHTML="^"
     document.getElementById(x_pos6[i]).style.left="20px"
 }
