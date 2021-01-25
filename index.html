@@ -1,0 +1,503 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GUITAR TABS MAKER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<div class="main_container">
+<button id="hide_switch" onclick="hide_switch()">Hide</button>
+<button id="show_switch" onclick="show_switch()">Show</button>
+<div class="all_buttons" id="all_buttons">
+<button id="1_blank" onclick="myFunctionClear1()">&nbsp;</button>
+<button id="10" onclick="myFunction10()">0</button>
+<button id="11" onclick="myFunction11()">1</button>
+<button id="12" onclick="myFunction12()">2</button>
+<button id="13" onclick="myFunction13()">3</button>
+<button id="14" onclick="myFunction14()">4</button>
+<button id="15" onclick="myFunction15()">5</button>
+<button id="16" onclick="myFunction16()">6</button>
+<button id="17" onclick="myFunction17()">7</button>
+<button id="18" onclick="myFunction18()">8</button>
+<button id="19" onclick="myFunction19()">9</button>
+<button id="110" onclick="myFunction110()">10</button>
+<button id="111" onclick="myFunction111()">11</button>
+<button id="112" onclick="myFunction112()">12</button>
+<button id="113" onclick="myFunction113()">13</button>
+<button id="114" onclick="myFunction114()">14</button>
+<button id="115" onclick="myFunction115()">15</button>
+<button id="116" onclick="myFunction116()">16</button>
+<button id="117" onclick="myFunction117()">17</button>
+<button id="118" onclick="myFunction118()">18</button>
+<button id="119" onclick="myFunction119()">19</button>
+<button id="120" onclick="myFunction120()">20</button>
+<button id="121" onclick="myFunction121()">21</button>
+<button onclick="strum_1()">|</button>
+<button onclick="strum_down_1()">^</button>
+
+<br>
+<button id="2_blank" onclick="myFunctionClear2()">&nbsp;</button>
+<button id="20" onclick="myFunction20()">0</button>
+<button id="21" onclick="myFunction21()">1</button>
+<button id="22" onclick="myFunction22()">2</button>
+<button id="23" onclick="myFunction23()">3</button>
+<button id="24" onclick="myFunction24()">4</button>
+<button id="25" onclick="myFunction25()">5</button>
+<button id="26" onclick="myFunction26()">6</button>
+<button id="27" onclick="myFunction27()">7</button>
+<button id="28" onclick="myFunction28()">8</button>
+<button id="29" onclick="myFunction29()">9</button>
+<button id="210" onclick="myFunction210()">10</button>
+<button id="211" onclick="myFunction211()">11</button>
+<button id="212" onclick="myFunction212()">12</button>
+<button id="213" onclick="myFunction213()">13</button>
+<button id="214" onclick="myFunction214()">14</button>
+<button id="215" onclick="myFunction215()">15</button>
+<button id="216" onclick="myFunction216()">16</button>
+<button id="217" onclick="myFunction217()">17</button>
+<button id="218" onclick="myFunction218()">18</button>
+<button id="219" onclick="myFunction219()">19</button>
+<button id="220" onclick="myFunction220()">20</button>
+<button id="221" onclick="myFunction221()">21</button>
+<button onclick="strum_2()">|</button>
+<button onclick="strum_down_2()">^</button>
+
+<br>
+<button id="3_blank" onclick="myFunctionClear3()">&nbsp;</button>
+<button id="30" onclick="myFunction30()">0</button>
+<button id="31" onclick="myFunction31()">1</button>
+<button id="32" onclick="myFunction32()">2</button>
+<button id="33" onclick="myFunction33()">3</button>
+<button id="34" onclick="myFunction34()">4</button>
+<button id="35" onclick="myFunction35()">5</button>
+<button id="36" onclick="myFunction36()">6</button>
+<button id="37" onclick="myFunction37()">7</button>
+<button id="38" onclick="myFunction38()">8</button>
+<button id="39" onclick="myFunction39()">9</button>
+<button id="310" onclick="myFunction310()">10</button>
+<button id="311" onclick="myFunction311()">11</button>
+<button id="312" onclick="myFunction312()">12</button>
+<button id="313" onclick="myFunction313()">13</button>
+<button id="314" onclick="myFunction314()">14</button>
+<button id="315" onclick="myFunction315()">15</button>
+<button id="316" onclick="myFunction316()">16</button>
+<button id="317" onclick="myFunction317()">17</button>
+<button id="318" onclick="myFunction318()">18</button>
+<button id="319" onclick="myFunction319()">19</button>
+<button id="320" onclick="myFunction320()">20</button>
+<button id="321" onclick="myFunction321()">21</button>
+<button onclick="strum_3()">|</button>
+<button onclick="strum_down_3()">^</button>
+<br>
+<button id="4_blank" onclick="myFunctionClear4()">&nbsp;</button>
+<button id="40" onclick="myFunction40()">0</button>
+<button id="41" onclick="myFunction41()">1</button>
+<button id="42" onclick="myFunction42()">2</button>
+<button id="43" onclick="myFunction43()">3</button>
+<button id="44" onclick="myFunction44()">4</button>
+<button id="45" onclick="myFunction45()">5</button>
+<button id="46" onclick="myFunction46()">6</button>
+<button id="47" onclick="myFunction47()">7</button>
+<button id="48" onclick="myFunction48()">8</button>
+<button id="49" onclick="myFunction49()">9</button>
+<button id="410" onclick="myFunction410()">10</button>
+<button id="411" onclick="myFunction411()">11</button>
+<button id="412" onclick="myFunction412()">12</button>
+<button id="413" onclick="myFunction413()">13</button>
+<button id="414" onclick="myFunction414()">14</button>
+<button id="415" onclick="myFunction415()">15</button>
+<button id="416" onclick="myFunction416()">16</button>
+<button id="417" onclick="myFunction417()">17</button>
+<button id="418" onclick="myFunction418()">18</button>
+<button id="419" onclick="myFunction419()">19</button>
+<button id="420" onclick="myFunction420()">20</button>
+<button id="421" onclick="myFunction421()">21</button>
+<button onclick="strum_4()">|</button>
+<button onclick="strum_down_4()">^</button>
+<br>
+<button id="5_blank" onclick="myFunctionClear5()">&nbsp;</button>
+<button id="50" onclick="myFunction50()">0</button>
+<button id="51" onclick="myFunction51()">1</button>
+<button id="52" onclick="myFunction52()">2</button>
+<button id="53" onclick="myFunction53()">3</button>
+<button id="54" onclick="myFunction54()">4</button>
+<button id="55" onclick="myFunction55()">5</button>
+<button id="56" onclick="myFunction56()">6</button>
+<button id="57" onclick="myFunction57()">7</button>
+<button id="58" onclick="myFunction58()">8</button>
+<button id="59" onclick="myFunction59()">9</button>
+<button id="510" onclick="myFunction510()">10</button>
+<button id="511" onclick="myFunction511()">11</button>
+<button id="512" onclick="myFunction512()">12</button>
+<button id="513" onclick="myFunction513()">13</button>
+<button id="514" onclick="myFunction514()">14</button>
+<button id="515" onclick="myFunction515()">15</button>
+<button id="516" onclick="myFunction516()">16</button>
+<button id="517" onclick="myFunction517()">17</button>
+<button id="518" onclick="myFunction518()">18</button>
+<button id="519" onclick="myFunction519()">19</button>
+<button id="520" onclick="myFunction520()">20</button>
+<button id="521" onclick="myFunction521()">21</button>
+<button onclick="strum_5()">|</button>
+<button onclick="strum_down_5()">^</button>
+<br>
+<button id="6_blank" onclick="myFunctionClear6()">&nbsp;</button>
+<button id="60" onclick="myFunction60()">0</button>
+<button id="61" onclick="myFunction61()">1</button>
+<button id="62" onclick="myFunction62()">2</button>
+<button id="63" onclick="myFunction63()">3</button>
+<button id="64" onclick="myFunction64()">4</button>
+<button id="65" onclick="myFunction65()">5</button>
+<button id="66" onclick="myFunction66()">6</button>
+<button id="67" onclick="myFunction67()">7</button>
+<button id="68" onclick="myFunction68()">8</button>
+<button id="69" onclick="myFunction69()">9</button>
+<button id="610" onclick="myFunction610()">10</button>
+<button id="611" onclick="myFunction611()">11</button>
+<button id="612" onclick="myFunction612()">12</button>
+<button id="613" onclick="myFunction613()">13</button>
+<button id="614" onclick="myFunction614()">14</button>
+<button id="615" onclick="myFunction615()">15</button>
+<button id="616" onclick="myFunction616()">16</button>
+<button id="617" onclick="myFunction617()">17</button>
+<button id="618" onclick="myFunction618()">18</button>
+<button id="619" onclick="myFunction619()">19</button>
+<button id="620" onclick="myFunction620()">20</button>
+<button id="621" onclick="myFunction621()">21</button>
+<button onclick="strum_6()">|</button>
+<button onclick="strum_down_6()">^</button>
+
+
+
+<br><br>
+<button onclick="the_prev()">Prev</button>
+<button onclick="the_next()">Next</button>
+</div>
+
+<div id="all_inputs">
+<form>
+<input id='song_name' type='text' placeholder='Song Name'>
+<div id='remaining_inputs'>
+<label>&#160;Chords:</label>
+<input type='text' placeholder='--'><br>
+<label">&#160;Tuning:</label>
+<input type='text' placeholder='--'><br>
+<label>&#160;&#160;&#160;&#160;Capo:</label>
+<input type='text' placeholder='--'><br>
+<label">&#160;&#160;&#160;&#160;BPM:</label>
+<input type='text' placeholder='--'><br>
+<label">Tabs By:</label>
+<input type='text' placeholder='--'>
+</div>
+</form>
+</div>
+
+<div class="box_1">
+
+    <div id="marker">|</div>
+    <div class="tab_lines">
+        <div class="string_one" id="one_zero"></div>
+        <div class="string_one" id="one_one"></div>
+        <div class="string_one" id="one_two"></div>
+        <div class="string_one" id="one_three"></div>
+        <div class="string_one" id="one_four"></div>
+        <div class="string_one" id="one_five"></div>
+        <div class="string_one" id="one_six"></div>
+        <div class="string_one" id="one_seven"></div>
+        <div class="string_one" id="one_eight"></div>
+        <div class="string_one" id="one_nine"></div>
+        <div class="string_one" id="one_ten"></div>
+        <div class="string_one" id="one_eleven"></div>
+        <div class="string_one" id="one_twelve"></div>
+        <div class="string_one" id="one_thirteen"></div>
+        <div class="string_one" id="one_fourteen"></div>
+        <div class="string_one" id="one_fifteen"></div>
+        <div class="string_one" id="one_sixteen"></div>
+        <div class="string_one" id="one_seventeen"></div>
+        <div class="string_one" id="one_eighteen"></div>
+        <div class="string_one" id="one_nineteen"></div>
+        <div class="string_one" id="one_twenty"></div>
+        <div class="string_one" id="one_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_two" id="two_zero"></div>
+        <div class="string_two" id="two_one"></div>
+        <div class="string_two" id="two_two"></div>
+        <div class="string_two" id="two_three"></div>
+        <div class="string_two" id="two_four"></div>
+        <div class="string_two" id="two_five"></div>
+        <div class="string_two" id="two_six"></div>
+        <div class="string_two" id="two_seven"></div>
+        <div class="string_two" id="two_eight"></div>
+        <div class="string_two" id="two_nine"></div>
+        <div class="string_two" id="two_ten"></div>
+        <div class="string_two" id="two_eleven"></div>
+        <div class="string_two" id="two_twelve"></div>
+        <div class="string_two" id="two_thirteen"></div>
+        <div class="string_two" id="two_fourteen"></div>
+        <div class="string_two" id="two_fifteen"></div>
+        <div class="string_two" id="two_sixteen"></div>
+        <div class="string_two" id="two_seventeen"></div>
+        <div class="string_two" id="two_eighteen"></div>
+        <div class="string_two" id="two_nineteen"></div>
+        <div class="string_two" id="two_twenty"></div>
+        <div class="string_two" id="two_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_three" id="three_zero"></div>
+        <div class="string_three" id="three_one"></div>
+        <div class="string_three" id="three_two"></div>
+        <div class="string_three" id="three_three"></div>
+        <div class="string_three" id="three_four"></div>
+        <div class="string_three" id="three_five"></div>
+        <div class="string_three" id="three_six"></div>
+        <div class="string_three" id="three_seven"></div>
+        <div class="string_three" id="three_eight"></div>
+        <div class="string_three" id="three_nine"></div>
+        <div class="string_three" id="three_ten"></div>
+        <div class="string_three" id="three_eleven"></div>
+        <div class="string_three" id="three_twelve"></div>
+        <div class="string_three" id="three_thirteen"></div>
+        <div class="string_three" id="three_fourteen"></div>
+        <div class="string_three" id="three_fifteen"></div>
+        <div class="string_three" id="three_sixteen"></div>
+        <div class="string_three" id="three_seventeen"></div>
+        <div class="string_three" id="three_eighteen"></div>
+        <div class="string_three" id="three_nineteen"></div>
+        <div class="string_three" id="three_twenty"></div>
+        <div class="string_three" id="three_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_four" id="four_zero"></div>
+        <div class="string_four" id="four_one"></div>
+        <div class="string_four" id="four_two"></div>
+        <div class="string_four" id="four_three"></div>
+        <div class="string_four" id="four_four"></div>
+        <div class="string_four" id="four_five"></div>
+        <div class="string_four" id="four_six"></div>
+        <div class="string_four" id="four_seven"></div>
+        <div class="string_four" id="four_eight"></div>
+        <div class="string_four" id="four_nine"></div>
+        <div class="string_four" id="four_ten"></div>
+        <div class="string_four" id="four_eleven"></div>
+        <div class="string_four" id="four_twelve"></div>
+        <div class="string_four" id="four_thirteen"></div>
+        <div class="string_four" id="four_fourteen"></div>
+        <div class="string_four" id="four_fifteen"></div>
+        <div class="string_four" id="four_sixteen"></div>
+        <div class="string_four" id="four_seventeen"></div>
+        <div class="string_four" id="four_eighteen"></div>
+        <div class="string_four" id="four_nineteen"></div>
+        <div class="string_four" id="four_twenty"></div>
+        <div class="string_four" id="four_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_five" id="five_zero"></div>
+        <div class="string_five" id="five_one"></div>
+        <div class="string_five" id="five_two"></div>
+        <div class="string_five" id="five_three"></div>
+        <div class="string_five" id="five_four"></div>
+        <div class="string_five" id="five_five"></div>
+        <div class="string_five" id="five_six"></div>
+        <div class="string_five" id="five_seven"></div>
+        <div class="string_five" id="five_eight"></div>
+        <div class="string_five" id="five_nine"></div>
+        <div class="string_five" id="five_ten"></div>
+        <div class="string_five" id="five_eleven"></div>
+        <div class="string_five" id="five_twelve"></div>
+        <div class="string_five" id="five_thirteen"></div>
+        <div class="string_five" id="five_fourteen"></div>
+        <div class="string_five" id="five_fifteen"></div>
+        <div class="string_five" id="five_sixteen"></div>
+        <div class="string_five" id="five_seventeen"></div>
+        <div class="string_five" id="five_eighteen"></div>
+        <div class="string_five" id="five_nineteen"></div>
+        <div class="string_five" id="five_twenty"></div>
+        <div class="string_five" id="five_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_six" id="six_zero"></div>
+        <div class="string_six" id="six_one"></div>
+        <div class="string_six" id="six_two"></div>
+        <div class="string_six" id="six_three"></div>
+        <div class="string_six" id="six_four"></div>
+        <div class="string_six" id="six_five"></div>
+        <div class="string_six" id="six_six"></div>
+        <div class="string_six" id="six_seven"></div>
+        <div class="string_six" id="six_eight"></div>
+        <div class="string_six" id="six_nine"></div>
+        <div class="string_six" id="six_ten"></div>
+        <div class="string_six" id="six_eleven"></div>
+        <div class="string_six" id="six_twelve"></div>
+        <div class="string_six" id="six_thirteen"></div>
+        <div class="string_six" id="six_fourteen"></div>
+        <div class="string_six" id="six_fifteen"></div>
+        <div class="string_six" id="six_sixteen"></div>
+        <div class="string_six" id="six_seventeen"></div>
+        <div class="string_six" id="six_eighteen"></div>
+        <div class="string_six" id="six_nineteen"></div>
+        <div class="string_six" id="six_twenty"></div>
+        <div class="string_six" id="six_twentyone"></div>
+    </div>
+</div>
+<br><br>
+<div class="box_1">
+    <div id="marker">|</div>
+    <div class="tab_lines">
+        <div class="string_one" id="one_zero"></div>
+        <div class="string_one" id="one_one"></div>
+        <div class="string_one" id="one_two"></div>
+        <div class="string_one" id="one_three"></div>
+        <div class="string_one" id="one_four"></div>
+        <div class="string_one" id="one_five"></div>
+        <div class="string_one" id="one_six"></div>
+        <div class="string_one" id="one_seven"></div>
+        <div class="string_one" id="one_eight"></div>
+        <div class="string_one" id="one_nine"></div>
+        <div class="string_one" id="one_ten"></div>
+        <div class="string_one" id="one_eleven"></div>
+        <div class="string_one" id="one_twelve"></div>
+        <div class="string_one" id="one_thirteen"></div>
+        <div class="string_one" id="one_fourteen"></div>
+        <div class="string_one" id="one_fifteen"></div>
+        <div class="string_one" id="one_sixteen"></div>
+        <div class="string_one" id="one_seventeen"></div>
+        <div class="string_one" id="one_eighteen"></div>
+        <div class="string_one" id="one_nineteen"></div>
+        <div class="string_one" id="one_twenty"></div>
+        <div class="string_one" id="one_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_two" id="two_zero"></div>
+        <div class="string_two" id="two_one"></div>
+        <div class="string_two" id="two_two"></div>
+        <div class="string_two" id="two_three"></div>
+        <div class="string_two" id="two_four"></div>
+        <div class="string_two" id="two_five"></div>
+        <div class="string_two" id="two_six"></div>
+        <div class="string_two" id="two_seven"></div>
+        <div class="string_two" id="two_eight"></div>
+        <div class="string_two" id="two_nine"></div>
+        <div class="string_two" id="two_ten"></div>
+        <div class="string_two" id="two_eleven"></div>
+        <div class="string_two" id="two_twelve"></div>
+        <div class="string_two" id="two_thirteen"></div>
+        <div class="string_two" id="two_fourteen"></div>
+        <div class="string_two" id="two_fifteen"></div>
+        <div class="string_two" id="two_sixteen"></div>
+        <div class="string_two" id="two_seventeen"></div>
+        <div class="string_two" id="two_eighteen"></div>
+        <div class="string_two" id="two_nineteen"></div>
+        <div class="string_two" id="two_twenty"></div>
+        <div class="string_two" id="two_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_three" id="three_zero"></div>
+        <div class="string_three" id="three_one"></div>
+        <div class="string_three" id="three_two"></div>
+        <div class="string_three" id="three_three"></div>
+        <div class="string_three" id="three_four"></div>
+        <div class="string_three" id="three_five"></div>
+        <div class="string_three" id="three_six"></div>
+        <div class="string_three" id="three_seven"></div>
+        <div class="string_three" id="three_eight"></div>
+        <div class="string_three" id="three_nine"></div>
+        <div class="string_three" id="three_ten"></div>
+        <div class="string_three" id="three_eleven"></div>
+        <div class="string_three" id="three_twelve"></div>
+        <div class="string_three" id="three_thirteen"></div>
+        <div class="string_three" id="three_fourteen"></div>
+        <div class="string_three" id="three_fifteen"></div>
+        <div class="string_three" id="three_sixteen"></div>
+        <div class="string_three" id="three_seventeen"></div>
+        <div class="string_three" id="three_eighteen"></div>
+        <div class="string_three" id="three_nineteen"></div>
+        <div class="string_three" id="three_twenty"></div>
+        <div class="string_three" id="three_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_four" id="four_zero"></div>
+        <div class="string_four" id="four_one"></div>
+        <div class="string_four" id="four_two"></div>
+        <div class="string_four" id="four_three"></div>
+        <div class="string_four" id="four_four"></div>
+        <div class="string_four" id="four_five"></div>
+        <div class="string_four" id="four_six"></div>
+        <div class="string_four" id="four_seven"></div>
+        <div class="string_four" id="four_eight"></div>
+        <div class="string_four" id="four_nine"></div>
+        <div class="string_four" id="four_ten"></div>
+        <div class="string_four" id="four_eleven"></div>
+        <div class="string_four" id="four_twelve"></div>
+        <div class="string_four" id="four_thirteen"></div>
+        <div class="string_four" id="four_fourteen"></div>
+        <div class="string_four" id="four_fifteen"></div>
+        <div class="string_four" id="four_sixteen"></div>
+        <div class="string_four" id="four_seventeen"></div>
+        <div class="string_four" id="four_eighteen"></div>
+        <div class="string_four" id="four_nineteen"></div>
+        <div class="string_four" id="four_twenty"></div>
+        <div class="string_four" id="four_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_five" id="five_zero"></div>
+        <div class="string_five" id="five_one"></div>
+        <div class="string_five" id="five_two"></div>
+        <div class="string_five" id="five_three"></div>
+        <div class="string_five" id="five_four"></div>
+        <div class="string_five" id="five_five"></div>
+        <div class="string_five" id="five_six"></div>
+        <div class="string_five" id="five_seven"></div>
+        <div class="string_five" id="five_eight"></div>
+        <div class="string_five" id="five_nine"></div>
+        <div class="string_five" id="five_ten"></div>
+        <div class="string_five" id="five_eleven"></div>
+        <div class="string_five" id="five_twelve"></div>
+        <div class="string_five" id="five_thirteen"></div>
+        <div class="string_five" id="five_fourteen"></div>
+        <div class="string_five" id="five_fifteen"></div>
+        <div class="string_five" id="five_sixteen"></div>
+        <div class="string_five" id="five_seventeen"></div>
+        <div class="string_five" id="five_eighteen"></div>
+        <div class="string_five" id="five_nineteen"></div>
+        <div class="string_five" id="five_twenty"></div>
+        <div class="string_five" id="five_twentyone"></div>
+    </div>
+    <div class="tab_lines">
+        <div class="string_six" id="six_zero"></div>
+        <div class="string_six" id="six_one"></div>
+        <div class="string_six" id="six_two"></div>
+        <div class="string_six" id="six_three"></div>
+        <div class="string_six" id="six_four"></div>
+        <div class="string_six" id="six_five"></div>
+        <div class="string_six" id="six_six"></div>
+        <div class="string_six" id="six_seven"></div>
+        <div class="string_six" id="six_eight"></div>
+        <div class="string_six" id="six_nine"></div>
+        <div class="string_six" id="six_ten"></div>
+        <div class="string_six" id="six_eleven"></div>
+        <div class="string_six" id="six_twelve"></div>
+        <div class="string_six" id="six_thirteen"></div>
+        <div class="string_six" id="six_fourteen"></div>
+        <div class="string_six" id="six_fifteen"></div>
+        <div class="string_six" id="six_sixteen"></div>
+        <div class="string_six" id="six_seventeen"></div>
+        <div class="string_six" id="six_eighteen"></div>
+        <div class="string_six" id="six_nineteen"></div>
+        <div class="string_six" id="six_twenty"></div>
+        <div class="string_six" id="six_twentyone"></div>
+    </div>
+</div>
+
+
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
