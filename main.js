@@ -223,10 +223,38 @@ function show_switch() {
 k=0
 function add(){
     for(k=x_pos.length-1;k>i;){
-    console.log(k)
     document.getElementById(x_pos[k]).innerHTML=document.getElementById(x_pos[k-1]).innerHTML
+    document.getElementById(x_pos2[k]).innerHTML=document.getElementById(x_pos2[k-1]).innerHTML
+    document.getElementById(x_pos3[k]).innerHTML=document.getElementById(x_pos3[k-1]).innerHTML
+    document.getElementById(x_pos4[k]).innerHTML=document.getElementById(x_pos4[k-1]).innerHTML
+    document.getElementById(x_pos5[k]).innerHTML=document.getElementById(x_pos5[k-1]).innerHTML
+    document.getElementById(x_pos6[k]).innerHTML=document.getElementById(x_pos6[k-1]).innerHTML
+
     document.getElementById(x_pos[k]).style.left=document.getElementById(x_pos[k-1]).style.left
+    document.getElementById(x_pos2[k]).style.left=document.getElementById(x_pos2[k-1]).style.left
+    document.getElementById(x_pos3[k]).style.left=document.getElementById(x_pos3[k-1]).style.left
+    document.getElementById(x_pos4[k]).style.left=document.getElementById(x_pos4[k-1]).style.left
+    document.getElementById(x_pos5[k]).style.left=document.getElementById(x_pos5[k-1]).style.left
+    document.getElementById(x_pos6[k]).style.left=document.getElementById(x_pos6[k-1]).style.left
     k=k-1
+    }
+    }
+function sub(){
+    for(k=i;k<x_pos.length-1;){
+    document.getElementById(x_pos[k]).innerHTML=document.getElementById(x_pos[k+1]).innerHTML
+    document.getElementById(x_pos2[k]).innerHTML=document.getElementById(x_pos2[k+1]).innerHTML
+    document.getElementById(x_pos3[k]).innerHTML=document.getElementById(x_pos3[k+1]).innerHTML
+    document.getElementById(x_pos4[k]).innerHTML=document.getElementById(x_pos4[k+1]).innerHTML
+    document.getElementById(x_pos5[k]).innerHTML=document.getElementById(x_pos5[k+1]).innerHTML
+    document.getElementById(x_pos6[k]).innerHTML=document.getElementById(x_pos6[k+1]).innerHTML
+
+    document.getElementById(x_pos[k]).style.left=document.getElementById(x_pos[k+1]).style.left
+    document.getElementById(x_pos2[k]).style.left=document.getElementById(x_pos2[k+1]).style.left
+    document.getElementById(x_pos3[k]).style.left=document.getElementById(x_pos3[k+1]).style.left
+    document.getElementById(x_pos4[k]).style.left=document.getElementById(x_pos4[k+1]).style.left
+    document.getElementById(x_pos5[k]).style.left=document.getElementById(x_pos5[k+1]).style.left
+    document.getElementById(x_pos6[k]).style.left=document.getElementById(x_pos6[k+1]).style.left
+    k=k+1
     }
     }
 
@@ -1220,7 +1248,24 @@ function myFunctionClear6(){
 }
 
 
-
+document.getElementById("strum_1").addEventListener("mouseover", function(){
+    strum_1();
+});
+document.getElementById("strum_2").addEventListener("mouseover", function(){
+    strum_2();
+});
+document.getElementById("strum_3").addEventListener("mouseover", function(){
+    strum_3();
+});
+document.getElementById("strum_4").addEventListener("mouseover", function(){
+    strum_4();
+});
+document.getElementById("strum_5").addEventListener("mouseover", function(){
+    strum_5();
+});
+document.getElementById("strum_6").addEventListener("mouseover", function(){
+    strum_6();
+});
 function strum_1(){
     reset_style(x_pos[i])
     document.getElementById(x_pos[i]).innerHTML="|"
@@ -1597,16 +1642,53 @@ function strum_down_6(){
 }
 
 
-l=0
+document.getElementById("mute_string_1").addEventListener("mouseover", function(){
+    mute_string_1();
+});
+document.getElementById("mute_string_2").addEventListener("mouseover", function(){
+    mute_string_2();
+});
+document.getElementById("mute_string_3").addEventListener("mouseover", function(){
+    mute_string_3();
+});
+document.getElementById("mute_string_4").addEventListener("mouseover", function(){
+    mute_string_4();
+});
+document.getElementById("mute_string_5").addEventListener("mouseover", function(){
+    mute_string_5();
+});
+document.getElementById("mute_string_6").addEventListener("mouseover", function(){
+    mute_string_6();
+});
+function mute_string_1(){
+    reset_style(x_pos[i])
+    document.getElementById(x_pos[i]).innerHTML="X"
+}
+function mute_string_2(){
+    reset_style(x_pos2[i])
+    document.getElementById(x_pos2[i]).innerHTML="X"
+}
+function mute_string_3(){
+    reset_style(x_pos3[i])
+    document.getElementById(x_pos3[i]).innerHTML="X"
+}
+function mute_string_4(){
+    reset_style(x_pos4[i])
+    document.getElementById(x_pos4[i]).innerHTML="X"
+}
+function mute_string_5(){
+    reset_style(x_pos5[i])
+    document.getElementById(x_pos5[i]).innerHTML="X"
+}
+function mute_string_6(){
+    reset_style(x_pos6[i])
+    document.getElementById(x_pos6[i]).innerHTML="X"
+}
 
 function the_next(){
-    storeStyle=[]
     i=i+1
     var marker=document.getElementById("marker")
     marker.style.marginLeft=i*44+".px";
-    for(l=0;l<=x_pos.length+1;l++){
-     storeStyle.push(document.getElementById(x_pos[l]).style.left);
-    }
 }
 function the_prev(){
     i=i-1
