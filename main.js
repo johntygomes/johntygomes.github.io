@@ -257,6 +257,70 @@ function sub(){
     k=k+1
     }
     }
+m=0
+
+function generate_text_button(){
+    my_tab_code=''
+    for(m=0;m < x_pos.length;){
+    my_tab_code=my_tab_code+"_"+document.getElementById(x_pos[m]).innerHTML
+    my_tab_code=my_tab_code+"_"+document.getElementById(x_pos2[m]).innerHTML
+    my_tab_code=my_tab_code+"_"+document.getElementById(x_pos3[m]).innerHTML
+    my_tab_code=my_tab_code+"_"+document.getElementById(x_pos4[m]).innerHTML
+    my_tab_code=my_tab_code+"_"+document.getElementById(x_pos5[m]).innerHTML
+    my_tab_code=my_tab_code+"_"+document.getElementById(x_pos6[m]).innerHTML
+    m=m+1
+    }
+    my_tab_code=my_tab_code.slice(1)
+    document.getElementById("generate_text_input").innerHTML=my_tab_code
+}
+n=0
+o=0
+function generate_tabs_button(){
+    input_tab_code=document.getElementById("generate_tabs_input").value
+    input_tab_code=input_tab_code.split("_")
+    for(n=0;n<input_tab_code.length;){
+    document.getElementById(x_pos[o]).innerHTML=input_tab_code[n]
+    if(input_tab_code[n]=='h' || input_tab_code[n]=='p' || input_tab_code[n]=='b' || input_tab_code[n]=='v'
+     || input_tab_code[n]=='a' || input_tab_code[n]=='t' || input_tab_code[n]=='/' || input_tab_code[n]=='\\'
+     || input_tab_code[n]=='|' || input_tab_code[n]=='^' || input_tab_code[n]=='X'){
+        document.getElementById(x_pos[o]).style.left="20px";
+     }
+    document.getElementById(x_pos2[o]).innerHTML=input_tab_code[n+1]
+    if(input_tab_code[n+1]=='h' || input_tab_code[n+1]=='p' || input_tab_code[n+1]=='b' || input_tab_code[n+1]=='v'
+     || input_tab_code[n+1]=='a' || input_tab_code[n+1]=='t' || input_tab_code[n+1]=='/' || input_tab_code[n+1]=='\\'
+     || input_tab_code[n+1]=='|' || input_tab_code[n+1]=='^' || input_tab_code[n+1]=='X'){
+        document.getElementById(x_pos2[o]).style.left="20px";
+     }
+    document.getElementById(x_pos3[o]).innerHTML=input_tab_code[n+2]
+    if(input_tab_code[n+2]=='h' || input_tab_code[n+2]=='p' || input_tab_code[n+2]=='b' || input_tab_code[n+2]=='v'
+     || input_tab_code[n+2]=='a' || input_tab_code[n+2]=='t' || input_tab_code[n+2]=='/' || input_tab_code[n+2]=='\\'
+     || input_tab_code[n+2]=='|' || input_tab_code[n+2]=='^' || input_tab_code[n+2]=='X'){
+        document.getElementById(x_pos3[o]).style.left="20px";
+     }
+    document.getElementById(x_pos4[o]).innerHTML=input_tab_code[n+3]
+    if(input_tab_code[n+3]=='h' || input_tab_code[n+3]=='p' || input_tab_code[n+3]=='b' || input_tab_code[n+3]=='v'
+     || input_tab_code[n+3]=='a' || input_tab_code[n+3]=='t' || input_tab_code[n+3]=='/' || input_tab_code[n+3]=='\\'
+     || input_tab_code[n+3]=='|' || input_tab_code[n+3]=='^' || input_tab_code[n+3]=='X'){
+        document.getElementById(x_pos4[o]).style.left="20px";
+     }
+    document.getElementById(x_pos5[o]).innerHTML=input_tab_code[n+4]
+    if(input_tab_code[n+4]=='h' || input_tab_code[n+4]=='p' || input_tab_code[n+4]=='b' || input_tab_code[n+4]=='v'
+     || input_tab_code[n+4]=='a' || input_tab_code[n+4]=='t' || input_tab_code[n+4]=='/' || input_tab_code[n+4]=='\\'
+     || input_tab_code[n+4]=='|' || input_tab_code[n+4]=='^' || input_tab_code[n+4]=='X'){
+        document.getElementById(x_pos5[o]).style.left="20px";
+     }
+    document.getElementById(x_pos6[o]).innerHTML=input_tab_code[n+5]
+    if(input_tab_code[n+5]=='h' || input_tab_code[n+5]=='p' || input_tab_code[n+5]=='b' || input_tab_code[n+5]=='v'
+     || input_tab_code[n+5]=='a' || input_tab_code[n+5]=='t' || input_tab_code[n+5]=='/' || input_tab_code[n+5]=='\\'
+     || input_tab_code[n+5]=='|' || input_tab_code[n+5]=='^' || input_tab_code[n+5]=='X'){
+        document.getElementById(x_pos6[o]).style.left="20px";
+     }
+    n=n+6
+    o=o+1
+    }
+
+}
+
 
 
 function reset_style(elem){
@@ -1638,6 +1702,105 @@ function strum_down_5(){
 function strum_down_6(){
     reset_style(x_pos6[i])	 
     document.getElementById(x_pos6[i]).innerHTML="^"
+    document.getElementById(x_pos6[i]).style.left="20px"
+}
+
+document.getElementById("ah_1").addEventListener("mouseover", function(){
+    ah_1();
+});
+document.getElementById("ah_2").addEventListener("mouseover", function(){
+    ah_2();
+});
+document.getElementById("ah_3").addEventListener("mouseover", function(){
+    ah_3();
+});
+document.getElementById("ah_4").addEventListener("mouseover", function(){
+    ah_4();
+});
+document.getElementById("ah_5").addEventListener("mouseover", function(){
+    ah_5();
+});
+document.getElementById("ah_6").addEventListener("mouseover", function(){
+    ah_6();
+});
+
+function ah_1(){
+    reset_style(x_pos[i])
+    document.getElementById(x_pos[i]).innerHTML="a"
+    document.getElementById(x_pos[i]).style.left="20px"
+}
+function ah_2(){
+    reset_style(x_pos2[i])
+    document.getElementById(x_pos2[i]).innerHTML="a"
+    document.getElementById(x_pos2[i]).style.left="20px"
+}
+function ah_3(){
+    reset_style(x_pos3[i])
+    document.getElementById(x_pos3[i]).innerHTML="a"
+    document.getElementById(x_pos3[i]).style.left="20px"
+}
+function ah_4(){
+    reset_style(x_pos4[i])
+    document.getElementById(x_pos4[i]).innerHTML="a"
+    document.getElementById(x_pos4[i]).style.left="20px"
+}
+function ah_5(){
+    reset_style(x_pos5[i])
+    document.getElementById(x_pos5[i]).innerHTML="a"
+    document.getElementById(x_pos5[i]).style.left="20px"
+}
+function ah_6(){
+    reset_style(x_pos6[i])
+    document.getElementById(x_pos6[i]).innerHTML="a"
+    document.getElementById(x_pos6[i]).style.left="20px"
+}
+
+document.getElementById("tap_1").addEventListener("mouseover", function(){
+    tap_1();
+});
+document.getElementById("tap_2").addEventListener("mouseover", function(){
+    tap_2();
+});
+document.getElementById("tap_3").addEventListener("mouseover", function(){
+    tap_3();
+});
+document.getElementById("tap_4").addEventListener("mouseover", function(){
+    tap_4();
+});
+document.getElementById("tap_5").addEventListener("mouseover", function(){
+    tap_5();
+});
+document.getElementById("tap_6").addEventListener("mouseover", function(){
+    tap_6();
+});
+function tap_1(){
+    reset_style(x_pos[i])
+    document.getElementById(x_pos[i]).innerHTML="t"
+    document.getElementById(x_pos[i]).style.left="20px"
+}
+function tap_2(){
+    reset_style(x_pos2[i])
+    document.getElementById(x_pos2[i]).innerHTML="t"
+    document.getElementById(x_pos2[i]).style.left="20px"
+}
+function tap_3(){
+    reset_style(x_pos3[i])
+    document.getElementById(x_pos3[i]).innerHTML="t"
+    document.getElementById(x_pos3[i]).style.left="20px"
+}
+function tap_4(){
+    reset_style(x_pos4[i])
+    document.getElementById(x_pos4[i]).innerHTML="t"
+    document.getElementById(x_pos4[i]).style.left="20px"
+}
+function tap_5(){
+    reset_style(x_pos5[i])
+    document.getElementById(x_pos5[i]).innerHTML="t"
+    document.getElementById(x_pos5[i]).style.left="20px"
+}
+function tap_6(){
+    reset_style(x_pos6[i])
+    document.getElementById(x_pos6[i]).innerHTML="t"
     document.getElementById(x_pos6[i]).style.left="20px"
 }
 
