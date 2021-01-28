@@ -17,6 +17,9 @@ height:1000%;
   background:white;
   z-index:100;
 }
+button{
+padding:0px 10px;
+}
 
 #song_name{
 display:block;
@@ -59,7 +62,8 @@ color:red;
 position:relative;
 font-weight:bold;
 left:97px;
-font-size:20px;}
+font-size:20px;
+top:30px;}
 
 .tab_lines{
 margin:auto;
@@ -71,6 +75,8 @@ border-width: 1px;
 border-color: black;
 background:black;
 z-index:-1;
+position:relative;
+top:0px;
 
 }
 .string_one,.string_two,.string_three,.string_four,.string_five,.string_six{
